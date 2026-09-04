@@ -1,13 +1,17 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
+import { FiMenu, FiX } from "react-icons/fi";
 import { useState } from "react";
+import Logo from "@/images/logo.jpg";
 
 const navItems = [
+  { label: "Home", href: "/" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -18,17 +22,15 @@ export default function Navbar() {
   }
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="sticky inset-x-0 top-0 z-50 bg-[#102a2e]/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-        <a
-          className="flex items-center gap-2 text-lg font-semibold tracking-[-0.03em] text-white"
-          href="#top"
-          onClick={closeMenu}
-        >
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#f4c95d] text-sm font-black text-[#102a2e]">
-            N
-          </span>
-          Nexify
+        <a className="flex items-center" href="#top" onClick={closeMenu}>
+          <Image
+            src={Logo}
+            alt="Nexify Technologia Ltd."
+            priority
+            className="h-12 w-28 rounded-full object-contain sm:w-32"
+          />
         </a>
 
         <nav
@@ -44,16 +46,6 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <a
-            className="group inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[#f4c95d] hover:text-[#f4c95d] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f4c95d]"
-            href="#contact"
-          >
-            Let&apos;s talk
-            <FiArrowUpRight
-              aria-hidden="true"
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-            />
-          </a>
         </nav>
 
         <button
@@ -93,13 +85,6 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a
-              className="mt-2 flex items-center justify-between bg-[#f4c95d] px-3 py-3 text-sm font-semibold text-[#102a2e]"
-              href="#contact"
-              onClick={closeMenu}
-            >
-              Let&apos;s talk <FiArrowUpRight aria-hidden="true" size={18} />
-            </a>
           </motion.nav>
         )}
       </AnimatePresence>
