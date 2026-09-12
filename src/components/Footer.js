@@ -11,10 +11,10 @@ export default function Footer() {
           aria-label="Footer navigation"
           className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60"
         >
-          <a className="hover:text-[#f4c95d]" href="#about">
+          <a className="hover:text-[#f4c95d]" href="/about">
             About
           </a>
-          <a className="hover:text-[#f4c95d]" href="#services">
+          <a className="hover:text-[#f4c95d]" href="/services">
             Services
           </a>
           <a className="hover:text-[#f4c95d]" href="#work">
