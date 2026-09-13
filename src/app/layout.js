@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import logo from "@/images/logo.jpg";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,9 +17,6 @@ export const metadata = {
   title: "Nexify | Digital products, made clear",
   description:
     "Nexify helps ambitious teams shape sharper brands, products, and web experiences.",
-  icons: {
-    icon: [{ url: logo.src, type: "image/jpeg" }],
-  },
 };
 
 export default function RootLayout({ children }) {

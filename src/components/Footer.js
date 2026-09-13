@@ -17,9 +17,6 @@ export default function Footer() {
           <a className="hover:text-[#f4c95d]" href="/services">
             Services
           </a>
-          <a className="hover:text-[#f4c95d]" href="#work">
-            Work
-          </a>
           <a className="hover:text-[#f4c95d]" href="#contact">
             Contact
           </a>

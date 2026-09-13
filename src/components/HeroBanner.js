@@ -45,9 +45,9 @@ export default function HeroBanner() {
             </p>
             <a
               className="group inline-flex w-fit items-center gap-3 border-b border-[#f4c95d] pb-2 text-sm font-semibold text-[#f4c95d] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-[#f4c95d]"
-              href="#work"
+              href="#process"
             >
-              Explore our work
+              Explore our process
               <FiArrowUpRight
                 aria-hidden="true"
                 className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
