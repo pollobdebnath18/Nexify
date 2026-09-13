@@ -65,7 +65,7 @@ const phases = [
 
 export default function HowWeWorkSection() {
   return (
-    <section className="bg-black text-white" id="process">
+    <section className="bg-[#102a2e] text-white" id="process">
       <div className="px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-4xl">
