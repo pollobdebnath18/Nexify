@@ -1,18 +1,27 @@
+import Image from "next/image";
 import { FiArrowUpRight, FiInstagram, FiLinkedin } from "react-icons/fi";
+import Logo from "@/images/logo.jpg";
 
 export default function Footer() {
   return (
     <footer className="bg-[#102a2e] px-5 py-10 text-white sm:px-8 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-white/15 pt-8 sm:flex-row sm:items-center sm:justify-between">
-        <a className="text-lg font-semibold tracking-[-0.03em]" href="#top">
-          Nexify
+        <a className="flex items-center gap-3" href="#top">
+          <Image
+            src={Logo}
+            alt="Nexify logo"
+            className="h-10 w-10 rounded-full object-cover"
+          />
+          <span className="text-lg font-semibold tracking-[-0.03em]">
+            Nexify
+          </span>
         </a>
         <nav
           aria-label="Footer navigation"
           className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/60"
         >
           <a className="hover:text-[#f4c95d]" href="/about">
-            About
+            About Company
           </a>
           <a className="hover:text-[#f4c95d]" href="/services">
             Services

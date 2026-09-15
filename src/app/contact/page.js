@@ -141,9 +141,9 @@ export default function ContactPage() {
               <div className="space-y-4 text-sm text-[#102a2e]/70">
                 <a
                   className="flex items-center gap-3 hover:text-[#e8754f]"
-                  href="tel:+8801780589179"
+                  href="tel:+880163601536"
                 >
-                  <FiPhone aria-hidden="true" size={18} /> +880 1780-589179
+                  <FiPhone aria-hidden="true" size={18} /> 0163601536
                 </a>
                 <a
                   className="flex items-center gap-3 hover:text-[#e8754f]"
@@ -160,9 +160,7 @@ export default function ContactPage() {
               </h2>
               <p className="flex items-start gap-3 text-sm text-[#102a2e]/70">
                 <FiMapPin aria-hidden="true" className="mt-0.5 shrink-0" size={18} />
-                876 Akhaliya
-                <br />
-                Sylhet 1212, Bangladesh
+                Sylhet, Bangladesh
               </p>
             </div>
           </div>

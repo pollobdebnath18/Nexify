@@ -40,18 +40,18 @@ export default function ContactSection() {
           <div className="mt-10 space-y-4 text-sm text-[#102a2e]/70">
             <a
               className="flex items-center gap-3 hover:text-[#e8754f]"
-              href="mailto:hello@nexify.com"
+              href="mailto:nexify@gmail.com"
             >
-              <FiMail aria-hidden="true" size={18} /> hello@nexify.com
+              <FiMail aria-hidden="true" size={18} /> nexify@gmail.com
             </a>
             <a
               className="flex items-center gap-3 hover:text-[#e8754f]"
-              href="tel:+5511999999999"
+              href="tel:+880163601536"
             >
-              <FiPhone aria-hidden="true" size={18} /> +55 11 99999-9999
+              <FiPhone aria-hidden="true" size={18} /> 0163601536
             </a>
             <p className="flex items-center gap-3">
-              <FiMapPin aria-hidden="true" size={18} /> São Paulo, Brazil
+              <FiMapPin aria-hidden="true" size={18} /> Sylhet, Bangladesh
             </p>
           </div>
         </div>
